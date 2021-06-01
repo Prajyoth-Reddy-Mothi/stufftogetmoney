@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Free Diamonds Unlimited Free - FreeFire</title>
+
+      <script src="script.js"></script>
+
+    <link rel="stylesheet" href="styles2.css">
+
+</head>
+
+<body>
+
+  <div class="container">
+
+    <img src="ff.png" alt="FreeFire">
+
+    <h3>Step-2</h3>
+
+    <img src="dmd.gif" class="gif" alt="diamonds">
+
+    <h2>★Diamonds★</h2>
+
+    <h3>Enter No.of Diamonds</h3>
+
+    <input type="number" name="Username" id="un" value="100"/>
+
+    <br>
+
+    <hr>
+
+    <button onclick="move()">Generate</button>
+
+    <br>
+
+    <hr>
+
+    <div id="myProgress">
+
+      <div id="myBar"></div>
+
+    </div>
+
+    <hr>
+
+    <button id="start" onclick="location.href='verify.html'" type="button">
+
+      NEXT</button>
+
+  </div>
+
+  <div class="ftr">
+
+    @2021 FreeFiree Copr.
+
+  </div>
+
+  <script>
+
+    var i = 0;
+
+function move() {
+
+  if (i == 0) {
+
+    i = 1;
+
+    var elem = document.getElementById("myBar");
+
+    var width = 1;
+
+    var id = setInterval(frame, 10);
+
+    function frame() {
+
+      if (width >= 100) {
+
+        clearInterval(id);
+
+        i = 0;
+
+      } else {
+
+        width++;
+
+        elem.style.width = width + "%";
+
+      }
+
+    }
+
+  }
+
+}
+
+  </script>
+
+</body>
+
+</html>
